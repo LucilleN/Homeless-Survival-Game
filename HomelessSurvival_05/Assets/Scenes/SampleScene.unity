@@ -6307,14 +6307,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a557c43c703da24e8a974f812494849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-  - Here, you can have this.
-  - How are you today?
-  - Have a lovely day!
-  - Sorry, I can't talk right now.
-  - Get out of here!
-  - You are filthy.
-  - People like you are the problem with this city.
+  spawnSpot: {fileID: 187176258}
+  collectibles:
+  - {fileID: 8857925439364098039, guid: e0a4d75fd7b296f46a5e3bce114baf78, type: 3}
+  - {fileID: 4288423322588127239, guid: 43e17ac50f8b99e41b1d91663fb0e3fb, type: 3}
+  niceness: 10
+  nicenessTime: 1000
+  dialogueNice:
+  - '"How are you today?"'
+  - '"Have a lovely day!"'
+  - '"Weather''s been up and down, huh?"'
+  - '"Godspeed, friend!"'
+  dialogueNeutral:
+  - '"Sorry, I can''t talk right now."'
+  - '"Can it really be that hard to find a job?"'
+  - '"Why do I keep seeing you around?"'
+  dialogueMean:
+  - '"Get out of here!"'
+  - '"You are filthy."'
+  - '"Jesus, you stink! Take a damn shower."'
+  - '"People like you are the problem with this city."'
+  - '"Get out of here, hobo!"'
+  - '"Don''t talk to me."'
+  - '"Bug off!"'
+  - '"Why can''t you just get a job, you lazy bum?"'
+  offerItem: '"Here, you can have this."'
 --- !u!136 &187176257
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6329,6 +6346,12 @@ CapsuleCollider:
   m_Height: 1.9
   m_Direction: 1
   m_Center: {x: 0, y: 0.94, z: 0}
+--- !u!1 &187176258 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6862540491231557671, guid: 86bfe934b043ac44585667a976ee848b,
+    type: 3}
+  m_PrefabInstance: {fileID: 187176253}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &193874662 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 153548, guid: 1e03d6e349b09fd4a89cd2f2b585cee7,
@@ -7011,14 +7034,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a557c43c703da24e8a974f812494849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-  - Here, you can have this.
-  - How are you today?
-  - Have a lovely day!
-  - Sorry, I can't talk right now.
-  - Get out of here!
-  - You are filthy.
-  - People like you are the problem with this city.
+  spawnSpot: {fileID: 0}
+  collectibles:
+  - {fileID: 0}
+  - {fileID: 0}
+  niceness: 10
+  nicenessTime: 1000
+  dialogueNice:
+  - '"How are you today?"'
+  - '"Have a lovely day!"'
+  - '"Weather''s been up and down, huh?"'
+  - '"Godspeed, friend!"'
+  dialogueNeutral:
+  - '"Sorry, I can''t talk right now."'
+  - '"Can it really be that hard to find a job?"'
+  - '"Why do I keep seeing you around?"'
+  dialogueMean:
+  - '"Get out of here!"'
+  - '"You are filthy."'
+  - '"Jesus, you stink! Take a damn shower."'
+  - '"People like you are the problem with this city."'
+  - '"Get out of here, hobo!"'
+  - '"Don''t talk to me."'
+  - '"Bug off!"'
+  - '"Why can''t you just get a job, you lazy bum?"'
+  offerItem: '"Here, you can have this."'
 --- !u!136 &212456356
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8565,14 +8605,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a557c43c703da24e8a974f812494849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-  - Here, you can have this.
-  - How are you today?
-  - Have a lovely day!
-  - Sorry, I can't talk right now.
-  - Get out of here!
-  - You are filthy.
-  - People like you are the problem with this city.
+  spawnSpot: {fileID: 248805841}
+  collectibles:
+  - {fileID: 8857925439364098039, guid: e0a4d75fd7b296f46a5e3bce114baf78, type: 3}
+  - {fileID: 4288423322588127239, guid: 43e17ac50f8b99e41b1d91663fb0e3fb, type: 3}
+  niceness: 10
+  nicenessTime: 1000
+  dialogueNice:
+  - '"How are you today?"'
+  - '"Have a lovely day!"'
+  - '"Weather''s been up and down, huh?"'
+  - '"Godspeed, friend!"'
+  dialogueNeutral:
+  - '"Sorry, I can''t talk right now."'
+  - '"Can it really be that hard to find a job?"'
+  - '"Why do I keep seeing you around?"'
+  dialogueMean:
+  - '"Get out of here!"'
+  - '"You are filthy."'
+  - '"Jesus, you stink! Take a damn shower."'
+  - '"People like you are the problem with this city."'
+  - '"Get out of here, hobo!"'
+  - '"Don''t talk to me."'
+  - '"Bug off!"'
+  - '"Why can''t you just get a job, you lazy bum?"'
+  offerItem: '"Here, you can have this."'
 --- !u!136 &248805840
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8587,6 +8644,12 @@ CapsuleCollider:
   m_Height: 1.9
   m_Direction: 1
   m_Center: {x: 0, y: 0.94, z: 0}
+--- !u!1 &248805841 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6862540491231557671, guid: 86bfe934b043ac44585667a976ee848b,
+    type: 3}
+  m_PrefabInstance: {fileID: 248805836}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &248871439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12408,7 +12471,7 @@ RectTransform:
   - {fileID: 125201264}
   - {fileID: 618420425}
   m_Father: {fileID: 1784357254}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -12616,7 +12679,7 @@ RectTransform:
   - {fileID: 66347875}
   - {fileID: 871953254}
   m_Father: {fileID: 1784357254}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -15554,6 +15617,85 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 429348963}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &430858997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 430858998}
+  - component: {fileID: 430859000}
+  - component: {fileID: 430858999}
+  m_Layer: 5
+  m_Name: HealthSliderText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &430858998
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430858997}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1784357254}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -869.4, y: 411.5}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &430858999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430858997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 18
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: HEALTH
+--- !u!222 &430859000
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430858997}
+  m_CullTransparentMesh: 0
 --- !u!1001 &432404761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18386,14 +18528,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a557c43c703da24e8a974f812494849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-  - Here, you can have this.
-  - How are you today?
-  - Have a lovely day!
-  - Sorry, I can't talk right now.
-  - Get out of here!
-  - You are filthy.
-  - People like you are the problem with this city.
+  spawnSpot: {fileID: 492158898}
+  collectibles:
+  - {fileID: 8857925439364098039, guid: e0a4d75fd7b296f46a5e3bce114baf78, type: 3}
+  - {fileID: 4288423322588127239, guid: 43e17ac50f8b99e41b1d91663fb0e3fb, type: 3}
+  niceness: 10
+  nicenessTime: 1000
+  dialogueNice:
+  - '"How are you today?"'
+  - '"Have a lovely day!"'
+  - '"Weather''s been up and down, huh?"'
+  - '"Godspeed, friend!"'
+  dialogueNeutral:
+  - '"Sorry, I can''t talk right now."'
+  - '"Can it really be that hard to find a job?"'
+  - '"Why do I keep seeing you around?"'
+  dialogueMean:
+  - '"Get out of here!"'
+  - '"You are filthy."'
+  - '"Jesus, you stink! Take a damn shower."'
+  - '"People like you are the problem with this city."'
+  - '"Get out of here, hobo!"'
+  - '"Don''t talk to me."'
+  - '"Bug off!"'
+  - '"Why can''t you just get a job, you lazy bum?"'
+  offerItem: '"Here, you can have this."'
 --- !u!136 &492158897
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -18408,6 +18567,12 @@ CapsuleCollider:
   m_Height: 1.9
   m_Direction: 1
   m_Center: {x: 0, y: 0.94, z: 0}
+--- !u!1 &492158898 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6862540491231557671, guid: 86bfe934b043ac44585667a976ee848b,
+    type: 3}
+  m_PrefabInstance: {fileID: 492158893}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &494182787 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 13a42c241463e034082f2fbcda640817,
@@ -25704,14 +25869,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a557c43c703da24e8a974f812494849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-  - Here, you can have this.
-  - How are you today?
-  - Have a lovely day!
-  - Sorry, I can't talk right now.
-  - Get out of here!
-  - You are filthy.
-  - People like you are the problem with this city.
+  spawnSpot: {fileID: 0}
+  collectibles:
+  - {fileID: 0}
+  - {fileID: 0}
+  niceness: 10
+  nicenessTime: 1000
+  dialogueNice:
+  - '"How are you today?"'
+  - '"Have a lovely day!"'
+  - '"Weather''s been up and down, huh?"'
+  - '"Godspeed, friend!"'
+  dialogueNeutral:
+  - '"Sorry, I can''t talk right now."'
+  - '"Can it really be that hard to find a job?"'
+  - '"Why do I keep seeing you around?"'
+  dialogueMean:
+  - '"Get out of here!"'
+  - '"You are filthy."'
+  - '"Jesus, you stink! Take a damn shower."'
+  - '"People like you are the problem with this city."'
+  - '"Get out of here, hobo!"'
+  - '"Don''t talk to me."'
+  - '"Bug off!"'
+  - '"Why can''t you just get a job, you lazy bum?"'
+  offerItem: '"Here, you can have this."'
 --- !u!4 &659626576 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4501628011269384, guid: 4662bd5d209e5f34d95717e65209913f,
@@ -26810,14 +26992,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a557c43c703da24e8a974f812494849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-  - Here, you can have this.
-  - How are you today?
-  - Have a lovely day!
-  - Sorry, I can't talk right now.
-  - Get out of here!
-  - You are filthy.
-  - People like you are the problem with this city.
+  spawnSpot: {fileID: 0}
+  collectibles:
+  - {fileID: 0}
+  - {fileID: 0}
+  niceness: 10
+  nicenessTime: 1000
+  dialogueNice:
+  - '"How are you today?"'
+  - '"Have a lovely day!"'
+  - '"Weather''s been up and down, huh?"'
+  - '"Godspeed, friend!"'
+  dialogueNeutral:
+  - '"Sorry, I can''t talk right now."'
+  - '"Can it really be that hard to find a job?"'
+  - '"Why do I keep seeing you around?"'
+  dialogueMean:
+  - '"Get out of here!"'
+  - '"You are filthy."'
+  - '"Jesus, you stink! Take a damn shower."'
+  - '"People like you are the problem with this city."'
+  - '"Get out of here, hobo!"'
+  - '"Don''t talk to me."'
+  - '"Bug off!"'
+  - '"Why can''t you just get a job, you lazy bum?"'
+  offerItem: '"Here, you can have this."'
 --- !u!136 &690662514
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -30503,7 +30702,7 @@ RectTransform:
   - {fileID: 810635279}
   - {fileID: 511109512}
   m_Father: {fileID: 1784357254}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -30982,13 +31181,14 @@ GameObject:
   - component: {fileID: 795255886}
   - component: {fileID: 795255885}
   - component: {fileID: 795255884}
+  - component: {fileID: 795255887}
   m_Layer: 5
   m_Name: BlackFader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &795255883
 RectTransform:
   m_ObjectHideFlags: 0
@@ -31001,7 +31201,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1784357254}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -31057,6 +31257,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 795255882}
   m_CullTransparentMesh: 0
+--- !u!114 &795255887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795255882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42f3bcd97adeb28498465fff80ddcb21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDelay: 3
 --- !u!1 &800159230 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 193586, guid: 663db760ab8d97048ac7071543ab00aa,
@@ -35040,14 +35253,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a557c43c703da24e8a974f812494849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-  - Here, you can have this.
-  - How are you today?
-  - Have a lovely day!
-  - Sorry, I can't talk right now.
-  - Get out of here!
-  - You are filthy.
-  - People like you are the problem with this city.
+  spawnSpot: {fileID: 0}
+  collectibles:
+  - {fileID: 8857925439364098039, guid: e0a4d75fd7b296f46a5e3bce114baf78, type: 3}
+  - {fileID: 4288423322588127239, guid: 43e17ac50f8b99e41b1d91663fb0e3fb, type: 3}
+  niceness: 10
+  nicenessTime: 1000
+  dialogueNice:
+  - '"How are you today?"'
+  - '"Have a lovely day!"'
+  - '"Weather''s been up and down, huh?"'
+  - '"Godspeed, friend!"'
+  dialogueNeutral:
+  - '"Sorry, I can''t talk right now."'
+  - '"Can it really be that hard to find a job?"'
+  - '"Why do I keep seeing you around?"'
+  dialogueMean:
+  - '"Get out of here!"'
+  - '"You are filthy."'
+  - '"Jesus, you stink! Take a damn shower."'
+  - '"People like you are the problem with this city."'
+  - '"Get out of here, hobo!"'
+  - '"Don''t talk to me."'
+  - '"Bug off!"'
+  - '"Why can''t you just get a job, you lazy bum?"'
+  offerItem: '"Here, you can have this."'
 --- !u!4 &912604839 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4488453375623818, guid: 86bfe934b043ac44585667a976ee848b,
@@ -36131,14 +36361,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a557c43c703da24e8a974f812494849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-  - Here, you can have this.
-  - How are you today?
-  - Have a lovely day!
-  - Sorry, I can't talk right now.
-  - Get out of here!
-  - You are filthy.
-  - People like you are the problem with this city.
+  spawnSpot: {fileID: 0}
+  collectibles:
+  - {fileID: 0}
+  - {fileID: 0}
+  niceness: 10
+  nicenessTime: 1000
+  dialogueNice:
+  - '"How are you today?"'
+  - '"Have a lovely day!"'
+  - '"Weather''s been up and down, huh?"'
+  - '"Godspeed, friend!"'
+  dialogueNeutral:
+  - '"Sorry, I can''t talk right now."'
+  - '"Can it really be that hard to find a job?"'
+  - '"Why do I keep seeing you around?"'
+  dialogueMean:
+  - '"Get out of here!"'
+  - '"You are filthy."'
+  - '"Jesus, you stink! Take a damn shower."'
+  - '"People like you are the problem with this city."'
+  - '"Get out of here, hobo!"'
+  - '"Don''t talk to me."'
+  - '"Bug off!"'
+  - '"Why can''t you just get a job, you lazy bum?"'
+  offerItem: '"Here, you can have this."'
 --- !u!136 &940507066
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -40750,14 +40997,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a557c43c703da24e8a974f812494849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-  - Here, you can have this.
-  - How are you today?
-  - Have a lovely day!
-  - Sorry, I can't talk right now.
-  - Get out of here!
-  - You are filthy.
-  - People like you are the problem with this city.
+  spawnSpot: {fileID: 0}
+  collectibles:
+  - {fileID: 0}
+  - {fileID: 0}
+  niceness: 10
+  nicenessTime: 1000
+  dialogueNice:
+  - '"How are you today?"'
+  - '"Have a lovely day!"'
+  - '"Weather''s been up and down, huh?"'
+  - '"Godspeed, friend!"'
+  dialogueNeutral:
+  - '"Sorry, I can''t talk right now."'
+  - '"Can it really be that hard to find a job?"'
+  - '"Why do I keep seeing you around?"'
+  dialogueMean:
+  - '"Get out of here!"'
+  - '"You are filthy."'
+  - '"Jesus, you stink! Take a damn shower."'
+  - '"People like you are the problem with this city."'
+  - '"Get out of here, hobo!"'
+  - '"Don''t talk to me."'
+  - '"Bug off!"'
+  - '"Why can''t you just get a job, you lazy bum?"'
+  offerItem: '"Here, you can have this."'
 --- !u!4 &1041444631 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 427610, guid: 1d3b1a1513de66247974634911345b98,
@@ -47557,14 +47821,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a557c43c703da24e8a974f812494849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-  - Here, you can have this.
-  - How are you today?
-  - Have a lovely day!
-  - Sorry, I can't talk right now.
-  - Get out of here!
-  - You are filthy.
-  - People like you are the problem with this city.
+  spawnSpot: {fileID: 1172217071}
+  collectibles:
+  - {fileID: 8857925439364098039, guid: e0a4d75fd7b296f46a5e3bce114baf78, type: 3}
+  - {fileID: 4288423322588127239, guid: 43e17ac50f8b99e41b1d91663fb0e3fb, type: 3}
+  niceness: 10
+  nicenessTime: 1000
+  dialogueNice:
+  - '"How are you today?"'
+  - '"Have a lovely day!"'
+  - '"Weather''s been up and down, huh?"'
+  - '"Godspeed, friend!"'
+  dialogueNeutral:
+  - '"Sorry, I can''t talk right now."'
+  - '"Can it really be that hard to find a job?"'
+  - '"Why do I keep seeing you around?"'
+  dialogueMean:
+  - '"Get out of here!"'
+  - '"You are filthy."'
+  - '"Jesus, you stink! Take a damn shower."'
+  - '"People like you are the problem with this city."'
+  - '"Get out of here, hobo!"'
+  - '"Don''t talk to me."'
+  - '"Bug off!"'
+  - '"Why can''t you just get a job, you lazy bum?"'
+  offerItem: '"Here, you can have this."'
 --- !u!136 &1172217070
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -47579,6 +47860,12 @@ CapsuleCollider:
   m_Height: 1.9
   m_Direction: 1
   m_Center: {x: 0, y: 0.94, z: 0}
+--- !u!1 &1172217071 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6862540491231557671, guid: 86bfe934b043ac44585667a976ee848b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1172217066}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1173849598
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47658,6 +47945,87 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1173849598}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1174366039
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1174366040}
+  - component: {fileID: 1174366042}
+  - component: {fileID: 1174366041}
+  m_Layer: 5
+  m_Name: HungerSliderText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1174366040
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174366039}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000068, y: 1.0000068, z: 1.0000068}
+  m_Children: []
+  m_Father: {fileID: 1784357254}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -868.9, y: 343.7}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1174366041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174366039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 18
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'HUNGER
+
+'
+--- !u!222 &1174366042
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174366039}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1174426440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52214,7 +52582,7 @@ RectTransform:
   - {fileID: 1411574228}
   - {fileID: 715104042}
   m_Father: {fileID: 1784357254}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -63741,7 +64109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 981e2b21ce3b6a948ba8acc0c0cd37f0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 65.2571
+      value: 64.911
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 981e2b21ce3b6a948ba8acc0c0cd37f0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -64108,14 +64476,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a557c43c703da24e8a974f812494849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-  - Here, you can have this.
-  - How are you today?
-  - Have a lovely day!
-  - Sorry, I can't talk right now.
-  - Get out of here!
-  - You are filthy.
-  - People like you are the problem with this city.
+  spawnSpot: {fileID: 0}
+  collectibles:
+  - {fileID: 0}
+  - {fileID: 0}
+  niceness: 10
+  nicenessTime: 1000
+  dialogueNice:
+  - '"How are you today?"'
+  - '"Have a lovely day!"'
+  - '"Weather''s been up and down, huh?"'
+  - '"Godspeed, friend!"'
+  dialogueNeutral:
+  - '"Sorry, I can''t talk right now."'
+  - '"Can it really be that hard to find a job?"'
+  - '"Why do I keep seeing you around?"'
+  dialogueMean:
+  - '"Get out of here!"'
+  - '"You are filthy."'
+  - '"Jesus, you stink! Take a damn shower."'
+  - '"People like you are the problem with this city."'
+  - '"Get out of here, hobo!"'
+  - '"Don''t talk to me."'
+  - '"Bug off!"'
+  - '"Why can''t you just get a job, you lazy bum?"'
+  offerItem: '"Here, you can have this."'
 --- !u!136 &1569032996
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -70275,8 +70660,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 430858998}
   - {fileID: 783251634}
+  - {fileID: 1174366040}
   - {fileID: 351170271}
+  - {fileID: 1946352901}
   - {fileID: 353652962}
   - {fileID: 1282752666}
   - {fileID: 795255883}
@@ -76301,6 +76689,85 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfba41359076cbd43b2ae328dde96de4, type: 3}
+--- !u!1 &1946352900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1946352901}
+  - component: {fileID: 1946352903}
+  - component: {fileID: 1946352902}
+  m_Layer: 5
+  m_Name: MoraleSliderText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1946352901
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946352900}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000068, y: 1.0000068, z: 1.0000068}
+  m_Children: []
+  m_Father: {fileID: 1784357254}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -868.6, y: 268.6}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1946352902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946352900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 18
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: MORALE
+--- !u!222 &1946352903
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946352900}
+  m_CullTransparentMesh: 0
 --- !u!1 &1948324478
 GameObject:
   m_ObjectHideFlags: 0
@@ -80253,14 +80720,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a557c43c703da24e8a974f812494849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-  - Here, you can have this.
-  - How are you today?
-  - Have a lovely day!
-  - Sorry, I can't talk right now.
-  - Get out of here!
-  - You are filthy.
-  - People like you are the problem with this city.
+  spawnSpot: {fileID: 0}
+  collectibles:
+  - {fileID: 0}
+  - {fileID: 0}
+  niceness: 10
+  nicenessTime: 1000
+  dialogueNice:
+  - '"How are you today?"'
+  - '"Have a lovely day!"'
+  - '"Weather''s been up and down, huh?"'
+  - '"Godspeed, friend!"'
+  dialogueNeutral:
+  - '"Sorry, I can''t talk right now."'
+  - '"Can it really be that hard to find a job?"'
+  - '"Why do I keep seeing you around?"'
+  dialogueMean:
+  - '"Get out of here!"'
+  - '"You are filthy."'
+  - '"Jesus, you stink! Take a damn shower."'
+  - '"People like you are the problem with this city."'
+  - '"Get out of here, hobo!"'
+  - '"Don''t talk to me."'
+  - '"Bug off!"'
+  - '"Why can''t you just get a job, you lazy bum?"'
+  offerItem: '"Here, you can have this."'
 --- !u!136 &2035458957
 CapsuleCollider:
   m_ObjectHideFlags: 0

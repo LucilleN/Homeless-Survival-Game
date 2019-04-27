@@ -46,12 +46,12 @@ public class PlayerController : MonoBehaviour
     public float warmthMax = 100;
     public float warmth = MORALE_DEFAULT;
 
-    private float HEALTH_DRAIN_DEFAULT = 0.00001f;
-    private float HEALTH_DRAIN_2 = 0.0001f;
-    private float HEALTH_DRAIN_3 = 0.0002f;
-    private float HUNGER_DRAIN_DEFAULT = 0.0001f;//0.000001f;
-    private float MORALE_DRAIN_DEFAULT = 0.00002f;
-    private float WARMTH_DRAIN_DEFAULT = 0.00002f;
+    private float HEALTH_DRAIN_DEFAULT = 0.0001f;
+    private float HEALTH_DRAIN_2 = 0.001f;
+    private float HEALTH_DRAIN_3 = 0.002f;
+    private float HUNGER_DRAIN_DEFAULT = 0.001f;//0.000001f;
+    private float MORALE_DRAIN_DEFAULT = 0.002f;
+    private float WARMTH_DRAIN_DEFAULT = 0.002f;
 
     private float healthDrain;
     private float hungerDrain;
@@ -253,8 +253,10 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateMorale()
     {
+        Debug.Log("PlayerController.UpdateMorale() - this function calls GameManager.UpdateMoraleHud()");
+
         morale = Mathf.Clamp(morale, moraleMin, moraleMax);
-        GameManager.UpdateHungerHud();
+        GameManager.UpdateMoraleHud();
 
         if (morale <= moraleMin)
         {
@@ -341,6 +343,7 @@ public class PlayerController : MonoBehaviour
 
     public void DecreaseMorale(float amount)
     {
+        Debug.Log("PlayerController.DecreaseMoral() by " + amount);
         morale = (morale - amount < 0) ? 0 : morale - amount;
         UpdateMorale();
     }
@@ -377,6 +380,8 @@ public class PlayerController : MonoBehaviour
 
     public void IncreaseMorale(float value)
     {
+        Debug.Log("PlayerController.IncreaseMoral() by " + value);
+
         morale = (morale + value > moraleMax) ? moraleMax : morale + value;
         UpdateMorale();
     }

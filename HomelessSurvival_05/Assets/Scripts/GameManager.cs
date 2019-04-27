@@ -78,6 +78,7 @@ public class GameManager : Singleton<GameManager>
 
     public static void UpdateMoraleHud()
     {
+        Debug.Log("GameManager.UpdateMoraleHud()");
         Instance.MoraleSlider.value = Instance.player.morale / Instance.player.moraleMax;
     }
 

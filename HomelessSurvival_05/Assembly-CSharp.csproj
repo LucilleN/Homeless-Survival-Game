@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Collectible.cs" />
     <Compile Include="Assets\Scripts\Dumpster.cs" />
     <Compile Include="Assets\Scripts\EquippedItemBtn.cs" />
+    <Compile Include="Assets\Scripts\Fader.cs" />
     <Compile Include="Assets\Scripts\Food.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
