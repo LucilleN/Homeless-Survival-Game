@@ -4,16 +4,25 @@ using UnityEngine;
 
 public class NPC : Interactable
 {
+    private static int DEFAULT_NICENESS = 10;
+    private static int MAX_NICENESS = 10;
+    private static int MIN_NICENESS = 0;
+    public int niceness = 10;
 
     public string[] dialogue = new string[] {
-        "\"Here, you can have this.\"",
         "\"How are you today?\"",
         "\"Have a lovely day!\"",
         "\"Sorry, I can't talk right now.\"",
         "\"Get out of here!\"",
         "\"You are filthy.\"",
-        "\"People like you are the problem with this city.\""
+        "\"People like you are the problem with this city.\"",
+        "\"Get out of here, hobo!\"",
+        "\"Don't talk to me.\"",
+        "\"Bug off!\"",
+        "\"Why can't you just get a job, you lazy bum?\""
     };
+
+    public string offerItem = "\"Here, you can have this.\"";
 
     /*
     public string[] dialogueKind = {
@@ -37,6 +46,7 @@ public class NPC : Interactable
     protected override void Start()
     {
         base.Start();
+        niceness = DEFAULT_NICENESS;
     }
 
     // Update is called once per frame
