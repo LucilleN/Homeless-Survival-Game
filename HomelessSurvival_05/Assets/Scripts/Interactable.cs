@@ -10,9 +10,9 @@ public class Interactable : MonoBehaviour
     /** Start function called before the first frame update, used for initialization. */
     protected virtual void Start()
     {
-        Debug.Log("Interactable.Start");
+     // Debug.Log("Interactable.Start");
         player = FindObjectOfType<PlayerController>();
-        Debug.Log("Interactable.Start - player: " + player);
+     // Debug.Log("Interactable.Start - player: " + player);
     }
 
     // MOVING ALL COLLISION DETECTION TO PLAYER CONTROLLER WITH RAYCAST
@@ -24,7 +24,7 @@ public class Interactable : MonoBehaviour
 
     protected void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Interactable.OnTriggerEnter");
+     // Debug.Log("Interactable.OnTriggerEnter");
 
         //PrintInfo();
 
@@ -34,7 +34,7 @@ public class Interactable : MonoBehaviour
 
         if (!this.enabled || other.gameObject.tag != "InteractableCollider") return;
 
-        Debug.Log("Interactable.OnTriggerEnter - other: " + other.name);
+     // Debug.Log("Interactable.OnTriggerEnter - other: " + other.name);
 
         Highlight();
 
@@ -42,7 +42,7 @@ public class Interactable : MonoBehaviour
 
     protected void OnTriggerStay(Collider other)
     {
-        Debug.Log("Interactable.OnTriggerStay");
+     // Debug.Log("Interactable.OnTriggerStay");
 
         //PrintInfo();
 
@@ -51,7 +51,7 @@ public class Interactable : MonoBehaviour
 
         if (!this.enabled || other.gameObject.tag != "InteractableCollider") return;
 
-        Debug.Log("Interactable.OnTriggerStay(): other = " + other.ToString());
+     // Debug.Log("Interactable.OnTriggerStay(): other = " + other.ToString());
         if (player.InteractPressed)
         {
             Interact();
@@ -61,7 +61,7 @@ public class Interactable : MonoBehaviour
 
     protected void OnTriggerExit(Collider other)
     {
-        Debug.Log("Interactable.OnTriggerExit");
+     // Debug.Log("Interactable.OnTriggerExit");
 
         //PrintInfo();
 
@@ -70,7 +70,7 @@ public class Interactable : MonoBehaviour
 
         if (!this.enabled || other.gameObject.tag != "InteractableCollider") return;
 
-        Debug.Log("other: " + other.name);
+     // Debug.Log("other: " + other.name);
 
         Unhighlight();
 
@@ -80,31 +80,31 @@ public class Interactable : MonoBehaviour
 
     public virtual void Interact()
     {
-        Debug.Log("Interactable.Interact");
+     // Debug.Log("Interactable.Interact");
 
     }
 
     public virtual void Highlight()
     {
-        Debug.Log("Interactable.Highlight");
+     // Debug.Log("Interactable.Highlight");
     }
 
     public virtual void Unhighlight()
     {
-        Debug.Log("Interactable.Unhighlight");
+     // Debug.Log("Interactable.Unhighlight");
     }
 
     protected void PrintInfo()
     {
-        Debug.Log("Interactable.PrintInfo");
+     // Debug.Log("Interactable.PrintInfo");
 
-        Debug.Log("this: " + this);
-        Debug.Log("this.name: " + this.name);
-        Debug.Log("this.enabled: " + this.enabled);
-        Debug.Log("this.isActiveAndEnabled: " + this.isActiveAndEnabled);
-        Debug.Log("this.gameObject.transform: " + this.gameObject.transform);
-        Debug.Log("player: " + player);
-        Debug.Log("transf: " + transf);
+     // Debug.Log("this: " + this);
+     // Debug.Log("this.name: " + this.name);
+     // Debug.Log("this.enabled: " + this.enabled);
+     // Debug.Log("this.isActiveAndEnabled: " + this.isActiveAndEnabled);
+     // Debug.Log("this.gameObject.transform: " + this.gameObject.transform);
+     // Debug.Log("player: " + player);
+     // Debug.Log("transf: " + transf);
     }
 
 }

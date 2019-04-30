@@ -40,7 +40,7 @@ public class Inventory : MonoBehaviour
 
     public void AddInventoryItem(Collectible item)
     {
-        Debug.Log("Inventory.AddInventoryItem()");
+     // Debug.Log("Inventory.AddInventoryItem()");
 
         /*
         GameObject itemBtnGO = Instantiate(invItemBtn, invHorizPanel.transform);
@@ -63,8 +63,8 @@ public class Inventory : MonoBehaviour
         InvItemBtn itemBtnScript = CreateInvBtn();
 
         itemBtnScript.collectibleType = item.collectibleType;
-        Debug.Log("item.collectibleType: " + item.collectibleType);
-        Debug.Log("itemBtnScript.collectibleType: " + itemBtnScript.collectibleType);
+     // Debug.Log("item.collectibleType: " + item.collectibleType);
+     // Debug.Log("itemBtnScript.collectibleType: " + itemBtnScript.collectibleType);
         itemBtnScript.value = item.value;
 
         itemBtnScript.typeTxt.text = itemBtnScript.collectibleType.ToString();
@@ -123,32 +123,32 @@ public class Inventory : MonoBehaviour
 
     public void UpdateEmptyInvText()
     {
-        Debug.Log("Inventory.UpdateEmptyInvText()");
-        Debug.Log("Inventory.UpdateEmptyInvText() - items: " + items.ToString());
+     // Debug.Log("Inventory.UpdateEmptyInvText()");
+     // Debug.Log("Inventory.UpdateEmptyInvText() - items: " + items.ToString());
         if (items.Count == 0)
         {
-            Debug.Log("items.Count == 0");
+         // Debug.Log("items.Count == 0");
             emptyInvText.text = emptyInvString;
         }
         else
         {
-            Debug.Log("items.Count NOT = 0");
+         // Debug.Log("items.Count NOT = 0");
             emptyInvText.text = "";
         }
     }
 
     public void UpdateEmptyEquippedText()
     {
-        Debug.Log("Inventory.UpdateEmptyEquippedText()");
-        Debug.Log("Inventory.UpdateEmptyEquippedText() - equipped: " + equipped.ToString());
+     // Debug.Log("Inventory.UpdateEmptyEquippedText()");
+     // Debug.Log("Inventory.UpdateEmptyEquippedText() - equipped: " + equipped.ToString());
         if (equipped.Count == 0)
         {
-            Debug.Log("equipped.Count == 0");
+         // Debug.Log("equipped.Count == 0");
             emptyEquippedText.text = emptyEquippedString;
         }
         else
         {
-            Debug.Log("equipped.Count NOT = 0");
+         // Debug.Log("equipped.Count NOT = 0");
             emptyEquippedText.text = "";
         }
     }

@@ -28,9 +28,16 @@ public class GameManager : Singleton<GameManager>
     public static Color shetlerColor = new Color(0.6981f, 0.4577f, 0.5086f);
     public static Color moneyColor = new Color(0.3077f, 0.3867f, 0.2353f);
 
+    public Fader faderScript;
+    public Light directionalLight;
+    private float dayTimer;
+    private float DirectionalLightIntensity;
+
     // Start is called before the first frame update
     void Start()
     {
+        dayTimer = 30;
+        DirectionalLightIntensity = 1;
         //FindRefs();
         HideInvMenu();
     }
@@ -38,13 +45,17 @@ public class GameManager : Singleton<GameManager>
     // Update is called once per frame
     void Update()
     {
+        // dayTimer -= Time.deltaTime;
+        DirectionalLightIntensity = Mathf.PingPong(Time.time, dayTimer) / dayTimer;
+        directionalLight.intensity = DirectionalLightIntensity;
+        Debug.Log(DirectionalLightIntensity);
         UpdateBarColors();
     }
 
     /** This function runs whenever you click reset in the Inspector. */
     private void Reset()
     {
-        Debug.Log("GameManager.Reset()");
+     // Debug.Log("GameManager.Reset()");
         FindRefs();
     }
 
@@ -78,7 +89,7 @@ public class GameManager : Singleton<GameManager>
 
     public static void UpdateMoraleHud()
     {
-        Debug.Log("GameManager.UpdateMoraleHud()");
+     // Debug.Log("GameManager.UpdateMoraleHud()");
         Instance.MoraleSlider.value = Instance.player.morale / Instance.player.moraleMax;
     }
 
@@ -101,7 +112,7 @@ public class GameManager : Singleton<GameManager>
         Color red = Color.red;
         Color yellow = Color.yellow;
 
-        Debug.Log("GameManager.UpdateBarColors()");
+     // Debug.Log("GameManager.UpdateBarColors()");
 
         GameObject[] BarFills = GameObject.FindGameObjectsWithTag("BarFill");
         foreach(GameObject barFill in BarFills)
@@ -148,11 +159,11 @@ public class GameManager : Singleton<GameManager>
 
     public void CreateModal(String text)
     {
-        Debug.Log("GameManager.CreateModal()");
+     // Debug.Log("GameManager.CreateModal()");
         DeactivateGame();
 
         GameObject modalGO = Instantiate(messageModal, messageCanvas.transform);
-        Debug.Log("GameManager.CreateModal() modalGO = " + modalGO);
+     // Debug.Log("GameManager.CreateModal() modalGO = " + modalGO);
 
 
         Modal modalScript = modalGO.GetComponent<Modal>();
@@ -162,7 +173,7 @@ public class GameManager : Singleton<GameManager>
 
     public static void DeactivateGame()
     {
-        Debug.Log("GameManager.DeactivateGame()");
+     // Debug.Log("GameManager.DeactivateGame()");
 
         Pause();
         // set lockCursor to false
@@ -173,7 +184,7 @@ public class GameManager : Singleton<GameManager>
 
     public static void ReactivateGame()
     {
-        Debug.Log("GameManager.ReactivateGame()");
+     // Debug.Log("GameManager.ReactivateGame()");
 
         Unpause();
         // set lockCursor to true
@@ -184,14 +195,14 @@ public class GameManager : Singleton<GameManager>
 
     private static void Pause()
     {
-        Debug.Log("GameManager.Pause()");
+     // Debug.Log("GameManager.Pause()");
         GamePaused = true;
         Time.timeScale = 0f;
     }
 
     private static void Unpause()
     {
-        Debug.Log("GameManager.Unpause()");
+     // Debug.Log("GameManager.Unpause()");
         GamePaused = false;
         Time.timeScale = 1f;
     }

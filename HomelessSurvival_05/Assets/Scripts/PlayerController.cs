@@ -95,7 +95,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("PlayerController.Awake");
+     // Debug.Log("PlayerController.Awake");
 
         healthDrain = HEALTH_DRAIN_DEFAULT;
         hungerDrain = HUNGER_DRAIN_DEFAULT;
@@ -114,7 +114,7 @@ public class PlayerController : MonoBehaviour
     /** Start is called before the first frame update */
     void Start()
     {
-        Debug.Log("PlayerController.Start");
+     // Debug.Log("PlayerController.Start");
         UpdateHealth();
         UpdateHunger();
         UpdateMorale();
@@ -150,9 +150,9 @@ public class PlayerController : MonoBehaviour
 
         DrainAll();
         /*
-        Debug.Log("health: " + health);
-        Debug.Log("hunger: " + hunger);
-        Debug.Log("morale: " + morale);
+     // Debug.Log("health: " + health);
+     // Debug.Log("hunger: " + hunger);
+     // Debug.Log("morale: " + morale);
         */
 
         CheckForInteractable();
@@ -167,10 +167,10 @@ public class PlayerController : MonoBehaviour
         if (Physics.Raycast(transform.position, FPScamera.transform.forward, out hit, interactDistance))
         {
 
-            Debug.Log("COLLISION WITH INTERACTABLE DETECTED: " + hit.collider.gameObject.name);
+         // Debug.Log("COLLISION WITH INTERACTABLE DETECTED: " + hit.collider.gameObject.name);
 
             Vector3 raycastOrigin = transform.position + raycastOffset;
-            print("raycastOrigin: "+ raycastOrigin);
+            // print("raycastOrigin: "+ raycastOrigin);
 
             //Debug.DrawRay(raycastOrigin, FPScamera.transform.forward, Color.red, 1f);
 
@@ -186,7 +186,7 @@ public class PlayerController : MonoBehaviour
 
                 Interactable interactScript = currentlyInteractingGO.GetComponent<Interactable>();
 
-                print("interactScript: " + interactScript);
+                // print("interactScript: " + interactScript);
 
                 if (interactScript)
                 {
@@ -228,7 +228,7 @@ public class PlayerController : MonoBehaviour
         //Note: Mathf.Clamp does not change the existing value, but rather returns a clamped value
         if (health <= healthMin)
         {
-            Debug.Log("game over!");
+         // Debug.Log("game over!");
             GameManager.EndGame();
         }
     }
@@ -253,7 +253,7 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateMorale()
     {
-        Debug.Log("PlayerController.UpdateMorale() - this function calls GameManager.UpdateMoraleHud()");
+     // Debug.Log("PlayerController.UpdateMorale() - this function calls GameManager.UpdateMoraleHud()");
 
         morale = Mathf.Clamp(morale, moraleMin, moraleMax);
         GameManager.UpdateMoraleHud();
@@ -343,7 +343,7 @@ public class PlayerController : MonoBehaviour
 
     public void DecreaseMorale(float amount)
     {
-        Debug.Log("PlayerController.DecreaseMoral() by " + amount);
+     // Debug.Log("PlayerController.DecreaseMoral() by " + amount);
         morale = (morale - amount < 0) ? 0 : morale - amount;
         UpdateMorale();
     }
@@ -380,7 +380,7 @@ public class PlayerController : MonoBehaviour
 
     public void IncreaseMorale(float value)
     {
-        Debug.Log("PlayerController.IncreaseMoral() by " + value);
+     // Debug.Log("PlayerController.IncreaseMoral() by " + value);
 
         morale = (morale + value > moraleMax) ? moraleMax : morale + value;
         UpdateMorale();
@@ -399,13 +399,13 @@ public class PlayerController : MonoBehaviour
 
     private void Reset()
     {
-        Debug.Log("PlayerController.Reset()");
+     // Debug.Log("PlayerController.Reset()");
 
         Text[] texts = FindObjectsOfType<Text>();
 
         foreach (Text text in texts)
         {
-            Debug.Log("text: "+text.name);
+         // Debug.Log("text: "+text.name);
             switch (text.name)
             {
                 case "Health Text":
@@ -421,8 +421,8 @@ public class PlayerController : MonoBehaviour
 
     private void onTriggerStay(Collider other)
     {
-        Debug.Log("PlayerController.OnTriggerStay");
-        Debug.Log("other: " + other.name);
+     // Debug.Log("PlayerController.OnTriggerStay");
+     // Debug.Log("other: " + other.name);
 
         if (other.gameObject == this.gameObject)
         {

@@ -8,11 +8,11 @@ public class Food : Collectible
 
     protected override void Start()
     {
-        Debug.Log("Food.Start");
+     // Debug.Log("Food.Start");
         base.Start();
 
         playerInventory = this.player.inventory;
-        Debug.Log("playerInventory: " + playerInventory);
+     // Debug.Log("playerInventory: " + playerInventory);
 
         collectibleType = CollectibleType.Food;
         uses = 1;

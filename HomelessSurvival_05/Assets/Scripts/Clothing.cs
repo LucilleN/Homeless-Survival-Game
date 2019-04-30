@@ -9,11 +9,11 @@ public class Clothing : Collectible
     // Start is called before the first frame update
     protected override void Start()
     {
-        Debug.Log("Clothing.Start");
+        // Debug.Log("Clothing.Start");
         base.Start();
 
         playerInventory = this.player.inventory;
-        Debug.Log("playerInventory: " + playerInventory);
+        // Debug.Log("playerInventory: " + playerInventory);
 
         collectibleType = CollectibleType.Clothing;
         uses = 20;

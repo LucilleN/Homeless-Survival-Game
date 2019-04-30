@@ -35,7 +35,7 @@ public class InvItemBtn : MonoBehaviour
 
     public void UseItem()
     {
-        Debug.Log("InvItemBtn.UseItem()");
+     // Debug.Log("InvItemBtn.UseItem()");
 
         uses--;
 
@@ -43,7 +43,7 @@ public class InvItemBtn : MonoBehaviour
         // Unequipping (clicking the equipped button) will create a clothing button in inventory only if number of uses left > 0
         if (collectibleType == Collectible.CollectibleType.Clothing)
         {
-            Debug.Log("InvItemBtn.UseItem(), Collectible type is clothing");
+         // Debug.Log("InvItemBtn.UseItem(), Collectible type is clothing");
             if (inventory.equipped.Count < gameManager.EQUIPPED_CAPACITY)
             {
                 EquipItem();
@@ -76,7 +76,7 @@ public class InvItemBtn : MonoBehaviour
 
     public void EquipItem()
     {
-        Debug.Log("InvItemBtn.EquipItem()");
+     // Debug.Log("InvItemBtn.EquipItem()");
 
         if (inventory.equipped.Count >= gameManager.EQUIPPED_CAPACITY)
         {
@@ -87,7 +87,7 @@ public class InvItemBtn : MonoBehaviour
         if (collectibleType == Collectible.CollectibleType.Clothing)
         {
 
-            Debug.Log("InvItemBtn.EquipItem(), Collectible type is clothing");
+         // Debug.Log("InvItemBtn.EquipItem(), Collectible type is clothing");
 
             player.IncreaseMorale(value * 10);
             player.IncreaseHealth(value * 5);

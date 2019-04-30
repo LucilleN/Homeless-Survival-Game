@@ -38,10 +38,10 @@ public class EquippedItemBtn : MonoBehaviour
 
     public void Unequip()
     {
-        Debug.Log("ON CLICK - EquippedItemBtn.Unequip()");
+     // Debug.Log("ON CLICK - EquippedItemBtn.Unequip()");
         InvItemBtn itemBtnScript = GameManager.Instance.inventory.CreateInvBtn();
 
-        Debug.Log("Created new InvBtn, itemBtnScript: " + itemBtnScript);
+     // Debug.Log("Created new InvBtn, itemBtnScript: " + itemBtnScript);
 
         itemBtnScript.collectibleType = collectibleType;
         itemBtnScript.uses = uses;

@@ -75,14 +75,14 @@ public class Dumpster : Interactable
 
     public override void Highlight()
     {
-        Debug.Log("Dumpster.Highlight()");
+        // Debug.Log("Dumpster.Highlight()");
         transf.localScale = highlightScale;
         originalMaterial.SetColor("_EmissionColor", highlightColor * 0.5f);
     }
 
     public override void Unhighlight()
     {
-        Debug.Log("Dumpster.Unhighlight()");
+        // Debug.Log("Dumpster.Unhighlight()");
 
         transf.localScale = defaultScale;
         originalMaterial.SetColor("_EmissionColor", defaultColor);
@@ -99,8 +99,8 @@ public class Dumpster : Interactable
 
     private void InstantiateItem()
     {
-        Debug.Log("Dumpster.InstantiateItem()");
-        Debug.Log("internalItems: " + internalItems.ToString() + ", count: " + internalItems.Count);
+     // Debug.Log("Dumpster.InstantiateItem()");
+     // Debug.Log("internalItems: " + internalItems.ToString() + ", count: " + internalItems.Count);
         if (internalItems.Count <= 0)
         {
             return;

@@ -7,7 +7,7 @@ public class Money : Collectible
     // Start is called before the first frame update
     protected override void Start()
     {
-        Debug.Log("Food.Start");
+        // Debug.Log("Food.Start");
         base.Start();
 
         collectibleType = CollectibleType.Money;
