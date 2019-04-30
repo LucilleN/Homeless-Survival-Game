@@ -48,7 +48,6 @@ public class GameManager : Singleton<GameManager>
         // dayTimer -= Time.deltaTime;
         DirectionalLightIntensity = Mathf.PingPong(Time.time, dayTimer) / dayTimer;
         directionalLight.intensity = DirectionalLightIntensity;
-        Debug.Log(DirectionalLightIntensity);
         UpdateBarColors();
     }
 

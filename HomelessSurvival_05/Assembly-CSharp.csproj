@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\InvItemBtn.cs" />
     <Compile Include="Assets\Scripts\Modal.cs" />
     <Compile Include="Assets\Scripts\Money.cs" />
+    <Compile Include="Assets\Scripts\MoveTo.cs" />
     <Compile Include="Assets\Scripts\NPC.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
