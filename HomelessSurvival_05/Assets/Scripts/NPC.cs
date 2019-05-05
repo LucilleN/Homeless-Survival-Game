@@ -16,6 +16,7 @@ public class NPC : Interactable
     private static int NICENESS_TIME_DEFAULT = 1000;
     public int nicenessTime = NICENESS_TIME_DEFAULT;
 
+
     public string[] dialogueNice = new string[] {
         "\"How are you today?\"",
         "\"Have a lovely day!\"",
@@ -169,4 +170,6 @@ public class NPC : Interactable
         Vector3 sum = playerForward + npcForward;
         return sum.magnitude <= Mathf.Max(playerForward.magnitude, npcForward.magnitude);
     }
+
+
 }

@@ -15,6 +15,7 @@ public class Fader : MonoBehaviour
         canvasGroup = GetComponent<CanvasGroup>();
         canvasGroup.alpha = 0; // Set to be transparent until we need it.
         // FadeIn(); // Do not call FadeIn on start, instead call when needed
+        this.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -25,6 +26,7 @@ public class Fader : MonoBehaviour
 
     public void FadeIn()
     {
+        this.gameObject.SetActive(true);
         canvasGroup.alpha = 0;
         StartCoroutine(DoFadeIn());
     }
@@ -45,6 +47,7 @@ public class Fader : MonoBehaviour
     {
         canvasGroup.alpha = 1;
         StartCoroutine(DoFadeOut());
+        this.gameObject.SetActive(false);
     }
 
     IEnumerator DoFadeOut()
@@ -54,6 +57,8 @@ public class Fader : MonoBehaviour
             canvasGroup.alpha -= Time.deltaTime / 2;
             yield return null;
         }
+
+        this.gameObject.SetActive(false);
 
         yield return null;
     }

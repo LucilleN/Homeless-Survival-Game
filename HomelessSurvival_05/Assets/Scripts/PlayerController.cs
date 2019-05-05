@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     public Camera FPScamera;
     public Vector3 centerPoint = new Vector3(Screen.width / 2, Screen.height / 2);
-    private float interactDistance = 2f;
+    private float interactDistance = 2.5f;
     private int layerMask = 9; //Layer for Interactables
 
 

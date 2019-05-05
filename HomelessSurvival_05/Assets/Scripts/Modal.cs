@@ -11,8 +11,15 @@ public class Modal : MonoBehaviour
 
     public string message;
 
+    public void Start()
+    {
+        Debug.Log("Modal.Start()");
+    }
+
     public void Close()
     {
+        Debug.Log("Modal.Close()");
+
         GameManager.ReactivateGame();
 
         Destroy(modalPanel);

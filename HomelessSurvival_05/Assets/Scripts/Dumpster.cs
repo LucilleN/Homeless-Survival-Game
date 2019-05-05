@@ -17,8 +17,8 @@ public class Dumpster : Interactable
     public GameObject[] collectibles = new GameObject[3];
     public GameObject spawnSpot;
 
-    private int SPAWN_TIME_MIN = 50; //5000
-    private int SPAWN_TIME_MAX = 150; //15000
+    private int SPAWN_TIME_MIN = 500; //5000
+    private int SPAWN_TIME_MAX = 1500; //15000
     private int spawnTime;
 
     public List<int> internalItems = new List<int>();

@@ -30,6 +30,7 @@ public class Inventory : MonoBehaviour
     {
         UpdateWalletText();
         UpdateEmptyInvText();
+        UpdateEmptyEquippedText();
     }
 
     // Update is called once per frame
